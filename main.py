@@ -1,15 +1,11 @@
-from ast import Await
-from multiprocessing.connection import wait
-from tkinter import N
-import math 
 # Printing a Simple Project Greeting!
-
 Project_greeting='''Hello World! 
 I'm New Project Created 
 by:
 ~~ SpyroHB ~~ xD'''
 
 # Learning Basic  Input & Conversion "Strings and Int/float".
+
 # Inputing your User's first name.
 U1_Fname= input('What is your first name? ')
 # Inputing your User's second name.
@@ -27,6 +23,7 @@ msg= f'''Full Name: {U1_fname} {U1_Lname}.
 Age:{age} years old
 Weight in Kilograms:{U1_weight_kilograms}
 '''
+
 # Using a basic output "Terminal"
 print(Project_greeting)
 print(msg)   
