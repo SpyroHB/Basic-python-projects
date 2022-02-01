@@ -17,5 +17,3 @@ age= 2022 - int(Q1_age)
 Q1_weight_pounds= input('What is your Weight in Lbs: ')
 Q1_weight_kilograms = float(Q1_weight_pounds) // 2.205
 print('Name:', Q1_name, '\nAge:', age,'\nWeight in Kilograms:', Q1_weight_kilograms)
-
-
