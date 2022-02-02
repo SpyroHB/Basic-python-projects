@@ -1,7 +1,7 @@
 # Printing a Simple Project Greeting!
 from ast import Return
-from tkinter import CURRENT
-from datetime import datetime, time
+
+
 Project_greeting='''Hello World! 
 I'm New Project Created 
 by:
@@ -19,12 +19,11 @@ U1_date= input('What is your birthday? ')
 U1_day= U1_date[0:2]
 U1_month= U1_date[2:4]
 U1_year= U1_date[4:]
-
 date= 2022 - int(U1_year)
 # Inputing your User's weight 
 U1_weight_pounds= input('What is your Weight in Lbs: ')
 # Conversing a String with float/int by using integer dividing "1 kilogram = 2.205 kbs"
-U1_weight_kilograms = float(U1_weight_pounds) // 2.205
+U1_weight_kilograms = float(U1_weight_pounds) / 2.205
 # Formatted string so we orgnaize our output message
 msg= f'''Full Name: {U1_Fname} {U1_Lname}.
 date:{date} years old
