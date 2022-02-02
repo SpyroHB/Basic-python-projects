@@ -1,7 +1,4 @@
 # Printing a Simple Project Greeting!
-from ast import Return
-
-
 Project_greeting='''Hello World! 
 I'm New Project Created 
 by:
@@ -32,4 +29,4 @@ Weight in Kilograms:{U1_weight_kilograms}
 '''
 # Using a basic output "Terminal"
 print(Project_greeting)
-print(msg)   
+print(msg)
