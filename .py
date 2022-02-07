@@ -1,15 +1,38 @@
+credits= ('''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			 ~~~~~~~~~~~~Created by~~~~~~~~~~~~~~
+			 ~~~~~~~~~~~~SpyroHB_dev~~~~~~~~~~~~~
+			 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~''')
+			 
+####################################################################################################################
+print(credits.upper())
+
 name = input("Enter a name:")
-MyNamesContainer = {
-"Maria" : 23,
-"Anna" : 19,
-"Jack" : 5,
-"Alex" : 12,
-"John" : 18}
+
+MySiblingsContainer = {
+
+"Emy" : 30,
+
+"Mohammed" : 27,
+
+"Mehdi" : 23,
+
+"Younes" : 19,
+
+"Abd raouf" : 10}
+
 shit = 0
+
 while True:
-	if name in MyNamesContainer:
-		print("Found it! It is corresponds to",MyNamesContainer[name])
+
+	if name in MySiblingsContainer:
+
+		print("Found it! It is corresponds to",MySiblingsContainer[name])
+
 		break
-	if name not in MyNamesContainer:
+
+	if name not in MySiblingsContainer:
+
 			print("No such name in the container.")
+
 	name = input("Enter a name:")
+
