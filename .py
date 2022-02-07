@@ -7,7 +7,7 @@ MyNamesContainer = {
 "John" : 18}
 shit = 0
 while True:
-	if name in list(MyNamesContainer):
+	if name in MyNamesContainer:
 		print("Found it! It is corresponds to",MyNamesContainer[name])
 		break
 	if name not in MyNamesContainer:
