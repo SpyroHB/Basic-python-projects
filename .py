@@ -1,12 +1,14 @@
-credits= ('''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			 ~~~~~~~~~~~~Created by~~~~~~~~~~~~~~
-			 ~~~~~~~~~~~~SpyroHB_dev~~~~~~~~~~~~~
-			 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~''')
+credits= ('''
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~Created by~~~~~~~~~~~~~~
+~~~~~~~~~~~~SpyroHB_dev~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~''')
 			 
 ####################################################################################################################
+
 print(credits.upper())
 
-name = input("Enter a name:")
+name = input("Enter a name: ")
 
 MySiblingsContainer = {
 
@@ -26,7 +28,7 @@ while True:
 
 	if name in MySiblingsContainer:
 
-		print("Found it! It is corresponds to",MySiblingsContainer[name])
+		print(f"Found it.. Here's their age !: {MySiblingsContainer [name]}")
 
 		break
 
@@ -35,4 +37,4 @@ while True:
 			print("No such name in the container.")
 
 	name = input("Enter a name:")
-
+	
