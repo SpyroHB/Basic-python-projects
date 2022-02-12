@@ -9,6 +9,7 @@ from codecs import replace_errors
 
 command = ""
 started = False
+print('Type help to get started!')
 while True:
      command= input('> ').lower()
      if command == "start":
