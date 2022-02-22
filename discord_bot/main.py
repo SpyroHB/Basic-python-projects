@@ -66,11 +66,19 @@ async def rall(ctx, rename_to):
 ####MALL COMMAND####
 @client.command(pass_context=True)
 async def mall(ctx):
+    listzz = [
+        'Deez nuts',
+        'nuts deez',
+        'totally random i swear',
+        'sorry guys last time xd'
+    ]
     await ctx.message.delete()
     for member in list(client.get_all_members()):
         await asyncio.sleep(0)
         try:
-            await member.send("Suck my duck pleasee\nFuck you by Fucking spyrodev")
+            for listi in listzz:
+                x = random.shuffle(listi)
+                await member.send(x)
         except:
             pass
         print("Action completed: Message all")
