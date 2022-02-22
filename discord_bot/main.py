@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import bot
-from config.py import BOT_TOKEN , prefix , owner_id
+from config import BOT_TOKEN , prefix , owner_id
 import asyncio
 import time
 import random
