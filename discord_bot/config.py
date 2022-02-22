@@ -1,0 +1,5 @@
+BOT_TOKEN = 'NTEyNjkyNTcwODMzMjg5MjQ2.W-24Kg.Ty_mIDV0cSPw7ykRKkAWS33-PUw'
+
+prefix = 's!'
+
+owner_id = '343383616895713290'
