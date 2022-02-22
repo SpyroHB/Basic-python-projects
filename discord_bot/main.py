@@ -41,7 +41,11 @@ async def secret(ctx):
     embed.add_field(name='Info', value='Gives information of a user', inline=False)
     await member.send(embed=embed)
 #############################
-
+@client.command()
+async def test(ctx):
+    member = ctx.message.author
+    msg ='Welcom bitch'
+    await member.reply(msg)
 
 ####PING COMMAND####
 @client.command(pass_context=True)
@@ -68,6 +72,8 @@ async def info(ctx, member: discord.Member=None):
     else:
         await channel.send("**The user's name is: {}**".format(member.name) + "\n**The user's ID is: {}**".format(member.id) + "\n**The user's current status is: {}**".format(member.status) + "\n**The user's highest role is: {}**".format(member.top_role) + "\n**The user joined at: {}**".format(member.joined_at))
     print("Action completed: User Info")
+    client.add_command(info)
+
 #############################
 client = MyClient()
 client.run(BOT_TOKEN)
