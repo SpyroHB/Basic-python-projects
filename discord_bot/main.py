@@ -132,6 +132,9 @@ async def info(ctx, member: discord.Member=None):
         embed=discord.Embed(title=None, description="**The user's name is: {}**".format(member.name) + "\n**The user's ID is: {}**".format(member.id) + "\n**The user's current status is: {}**".format(member.status) + "\n**The user's highest role is: {}**".format(member.top_role) + "\n**The user joined at: {}**".format(member.joined_at))
         await channel.send(embed=embed)
     print("Action completed: User Info")
+
+
+
 #############################
 
 client.run(BOT_TOKEN)

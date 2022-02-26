@@ -1,7 +1,12 @@
-def rotate_word(s, i):
-## Iterate each character in string "s"
-  for ch in s:
-## Rotating each ch by given value i
-    r_ch = ord(ch) + i
-## Priting the output
-    print(f"{ch} = {chr(r_ch)}, ({i})")
+def caesar_cipher(word=str, key=int):
+    try:
+      s = word.split(" ")
+      a = ""
+      for ch in s:
+            for x in ch:
+                r_ch = ord(x) - key
+                a += chr(r_ch)
+      print(f'''Cipher:{a}
+key: 13''')
+    except ValueError:
+          print('Value Error:Try to use small sentences')
