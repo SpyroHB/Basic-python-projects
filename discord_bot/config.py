@@ -1,4 +1,4 @@
-BOT_TOKEN = 'OTMzNzQ4NDg3NDkxODMzOTE2.YemDCw.lZTc2RarS1icfPKhvXDefsNyXb0'
+BOT_TOKEN = 'NTEyNjkyNTcwODMzMjg5MjQ2.W-24Kg.Ty_mIDV0cSPw7ykRKkAWS33-PUw'
 
 prefix = '$'
 
