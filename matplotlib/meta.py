@@ -4,6 +4,6 @@ y=[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 plt.plot(x,y)
 plt.xlabel('X')
 plt.ylabel('Y')
-plt.title('Test Plot')
+plt.title('Testing Plot')
 plt.show()
 plt.savefig('plot1.png')
