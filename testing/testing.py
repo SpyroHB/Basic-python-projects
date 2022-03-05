@@ -7,4 +7,12 @@ def histogram(s):
             d[c] += 1
     print(d)
 
-histogram('younes himda aka the fucking spyro')
+
+def reverse_lookup(d, v):
+    for k in d:
+        if d[k] == v:
+            return k
+    raise LookupError()
+
+
+
