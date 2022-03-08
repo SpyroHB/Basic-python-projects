@@ -5,7 +5,7 @@ def histogram(s):
             d[c] = 1
         else:
             d[c] += 1
-    print(d)
+    return d
 
 
 def reverse_lookup(d, v):

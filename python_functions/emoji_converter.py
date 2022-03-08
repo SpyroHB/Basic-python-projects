@@ -9,8 +9,3 @@ def emoji_converter(msg):
     for word in words:
         output += emojis_disc.get(word, word) + " "
     return output.capitalize()
-
-
-msg = input('')
-print(emoji_converter(msg))
-

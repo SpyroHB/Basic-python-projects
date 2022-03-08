@@ -1,33 +1,18 @@
 import string as s
 import random as r
 
-character = list(s.ascii_letters + s.digits + "!@#$%^&*()")
+character = list(s.ascii_letters + s.digits + "+*/-().")
 
-def generate_random_password():
-
-    inval = int(input("Enter password length: "))
-
+def generate_random_password(passLength=int):
     password = []
-
-    if not inval >= 6:
-        print()
-        print('Your password length must be alteast 6 characters!')
-    
-    elif not inval <= 30:
-        print()
-        print('Your password length must be smaller or equal to 30 characters!')
-    
+    if passLength > 30:
+        return 'Your password length must be smaller or equal to 30 characters!'
     else:
-
         r.shuffle(character)
-
-        for i in range(inval):
-
+        for i in range(passLength):
             password.append(r.choice(character))
-
             r.shuffle(password)
+    return "".join(password)
 
-    print("".join(password))
 
 
-generate_random_password()
