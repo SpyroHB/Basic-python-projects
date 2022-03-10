@@ -9,6 +9,8 @@ msg = "multiplication (*)\naddition (+)\nsubtraction (-)\nexponent (**)\ndivisio
 
 z = input(msg).lower()
 double_space()
+
+
 while not z == 'quit':
     if z == '+':
         n1 = float(input('type first number: '))
@@ -17,7 +19,6 @@ while not z == 'quit':
         print(f'{n1} + {n2} = ',addition(n1,n2))
         double_space()
     elif z == '-':
-
         n1 = float(input('type first number: '))
         n2 = float(input('type second number: '))
         double_space()
