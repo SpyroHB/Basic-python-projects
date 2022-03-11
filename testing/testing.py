@@ -1,3 +1,5 @@
+import codecs
+
 def histogram(s):
     d = dict()
     for c in s:
@@ -14,5 +16,7 @@ def reverse_lookup(d, v):
             return k
     raise LookupError()
 
+
+f = codecs.open('foo.txt','rU','utf-8')
 
 
