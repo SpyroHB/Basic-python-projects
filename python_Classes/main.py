@@ -1,37 +1,49 @@
-import datetime as t
-
-
 class Robot:
-    def __init__(self,name,color,weight,createdAt,creator,mainServer,currentTime) -> None:
+    def __init__(self,name=str,id=int,type=str) -> None:
+        self.id = id
         self.name = name
-        self.color = color
-        self.weight = weight
-        self.createdAt = createdAt
-        self.creator = creator
-        self.mainServer = mainServer
-        self.currentTime = currentTime
+        self.type = type
+    
+    def get_id(self):
+        return self.id
+    
+    
+    def get_type(self):
+        return self.type
+        
+
+
+class BotProgram:
+    def __init__(self,name=str,max_bots=int) -> None:
+        self.name = name
+        self.max_bots = max_bots
+        self.bots = []
+        self.admin_bots = []
     
     def introduceSelf(self):
-        print(f'''
-    Hello I'm {self.color} Robot.
-
-    My name is {self.name}.
-                    
-    My virtual weight is {self.weight}.
-
-    Created At: {self.createdAt}
-
-    My Creator is {self.creator}
-
-    Main Server is {self.mainServer}
-
-    Current Time local time: {self.currentTime}.
-    ''')
+        return self.name,self.max_bots
     
+    
+    
+    def add_bot(self,bot):
+        if len(self.bots) < self.max_bots:
+            self.bots.append(bot)
+            return True
+        return False
+        
+
+
+    def add_admin(self,bot=str):
+        if bot.get_type() == 'Admin':
+            self.admin_bots.append(bot)
+            return True
+        return False
 
 
 
 
+p1 = BotProgram('Dsicord bots',3)
+r1 = Robot('SpyroBot','34568745645490','Admin')
 
-r1 = Robot('SpyroBot','Blue','43Kg','2020/03/11','SpyroDev_',None,t.datetime.now())
-r1.introduceSelf()
+
+print(p1.introduceSelf())
