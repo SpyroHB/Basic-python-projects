@@ -1,3 +1,4 @@
+# Reverse dictionary mapping 
 def invert_dict(d):
     inverse = dict()
     for key in d:
@@ -9,9 +10,10 @@ def invert_dict(d):
     return inverse
 
 
-def histogram(s):
+# Counting Each Letter with 
+def histogram(sentence):
     d = dict()
-    for x in s:
+    for x in sentence:
         if x in d:
             d[x] += 1
         else:
@@ -19,7 +21,12 @@ def histogram(s):
     return d
 
 
-
+# Similiar to invert_dict "Reverse traverse in dictionary"
+def reverse_lookup(d, v):
+    for k in d:
+        if d[k] == v:
+            return k
+    raise LookupError()
 
 
 

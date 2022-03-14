@@ -1,3 +1,4 @@
+# Mapping each key with it's emojis
 def emoji_converter(msg):
     words = msg.split(' ')
     emojis_disc = {

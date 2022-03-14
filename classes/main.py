@@ -31,13 +31,3 @@ class BotProgram:
             return True
         return False
         
-
-
-
-
-
-p1 = BotProgram('Dsicord bots',3)
-r1 = Robot('SpyroBot','34568745645490','Admin')
-
-
-print(p1.add_bot(r1))

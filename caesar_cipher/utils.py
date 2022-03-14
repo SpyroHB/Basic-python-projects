@@ -1,19 +1,21 @@
-# Using a simple coder with a key of "28"
-def encrypt(sentence=str,i=int):
+# Using a simple coder/decoder with optional key "i"
+
+
+def encrypt(sentence=str,key=int):
     s = sentence.split(" ")
     a = ""
     for ch in s:
         for x in ch:
-            r_ch = ord(x) - i
+            r_ch = ord(x) - key
             a += chr(r_ch) 
     return a
 
-# Using a simple decoder with a key of "28"
-def decrypter(sentence=str,i=int):
+
+def decrypter(sentence=str,key=int):
     s = sentence.split(" ")
     a = ""
     for ch in s:
         for x in ch:
-            r_ch = ord(x) + i
+            r_ch = ord(x) + key
             a+=chr(r_ch) 
     return a

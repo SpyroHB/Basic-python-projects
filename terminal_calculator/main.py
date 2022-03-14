@@ -1,8 +1,7 @@
-from config import CalcuOptions
+from config import CalcuOptions, double_space
 
-def double_space():
-    print()
-    print()
+
+
 
 
 msg = "multiplication (*)\naddition (+)\nsubtraction (-)\nexponent (**)\ndivision (/)\ntype 'quit' to exit\n:>  "
