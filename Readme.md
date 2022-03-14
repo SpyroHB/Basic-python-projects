@@ -1,6 +1,10 @@
-Hello ! This my first project in Python,I have used this resporitory for exercising and learning new things in python
+***"Knowledge learning something everyday. Wisdom is letting go of someting everyday."
+Zen Proverb***
+
+
+**Hello ! This my first project in Python,I have used this resporitory for exercising and learning new things in python
 Still learning everyday, So sharing this maybe help others too.
-So here it is the subject this resporitory about:
+So here it is the subject this resporitory about:**
 
 - Getting information "First and last name" from your User/client. 
     -
@@ -49,5 +53,3 @@ So here it is the subject this resporitory about:
 --New stuff coming soon--
 
 
-***"Knowledge learning something everyday. Wisdom is letting go of someting everyday."
-Zen Proverb***
