@@ -2,11 +2,13 @@
 Zen Proverb***
 
 
-**Hello ! This my first project in Python,I have used this resporitory for exercising and learning new things in python
-Still learning everyday, So sharing this maybe help others too.
-So here it is the subject this resporitory about:**
+*Hello ! This my first project in Python,I have used this resporitory for exercising and learning new things in python
+Still learning everyday.
+So here it is the subject this resporitory about:*
 
-- Getting information "First and last name" from your User/client. 
+
+
+- Getting informationfrom your User/client. 
     -
 
     Working with input/print and if statement
