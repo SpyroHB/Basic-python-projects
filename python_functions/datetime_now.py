@@ -1,4 +1,6 @@
 import datetime
+
+
 def date_time(day,month,year):
     now = datetime.datetime.now()
     x = now.strftime("%d")
@@ -7,6 +9,5 @@ def date_time(day,month,year):
     
     print(f"{x}-{y}-{z}")
 
-date_time()
 
 

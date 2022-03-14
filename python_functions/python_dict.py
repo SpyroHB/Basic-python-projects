@@ -1,6 +1,3 @@
-import readline
-
-
 def invert_dict(d):
     inverse = dict()
     for key in d:
