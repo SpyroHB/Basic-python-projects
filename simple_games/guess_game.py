@@ -1,6 +1,6 @@
-z = input('Welcome to guess game Type your guess:\n> ').lower()
+z = input('Welcome to guess game Type your guess:\n> ').lower() 
 
-guess_words= ['younes','himda','spyrodev','spyro']
+guess_words= ['car','house','python','java'] # any word but in lowercase
 
 while True:
 
