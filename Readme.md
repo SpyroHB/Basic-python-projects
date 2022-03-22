@@ -1,7 +1,3 @@
-***"Knowledge learning something everyday. Wisdom is letting go of someting everyday."
-Zen Proverb***
-
-
 *Hello ! This my first project in Python,I have used this resporitory for exercising and learning new things in python
 Still learning everyday.
 So here it is the subject this resporitory about:*
@@ -52,6 +48,7 @@ So here it is the subject this resporitory about:*
 
 
 
---New stuff coming soon--
 
 
+***"Knowledge learning something everyday. Wisdom is letting go of someting everyday."
+Zen Proverb***
